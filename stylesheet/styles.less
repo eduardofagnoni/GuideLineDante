@@ -203,7 +203,7 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 }
 .aluno ul li:last-child {
     border-bottom: none;
-    
+
 }
 .aluno ul li a {    
     font-size: @tamanhoFontEsquerda;
@@ -211,6 +211,73 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
     text-decoration: none;
 }
 .aluno .foto-aluno {
+    width: 170px;
+    height: 170px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top:-40px;
+    left: 40px;
+}
+
+
+/*-------------------------------------------------------
+    Funcionario
+  -----------------------------------------------------*/
+.funcionario {
+    background-color: #ffffff;
+    border-bottom: solid 7px @cinza;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 150px;
+
+}
+.funcionario p {
+    margin:0;
+    padding:0;
+    font-size: 1.5em;
+    color: @cinza;
+}
+.funcionario small {
+    font-size: 0.9em;
+    color: @cinza;
+}
+.funcionario small a {
+    text-decoration: underline;
+    color: inherit;
+}
+.funcionario h2 {
+    margin:0;
+    padding:0;
+    color:@cinza;
+    font-size:@tamanhoTituloH2;
+    position: relative;
+}
+.funcionario ul {
+    margin:0;
+    padding:0;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+.funcionario ul li {
+    display: block;
+    list-style-type: none;
+    border-bottom: solid 1px @cinzaTexto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.funcionario ul li:last-child {
+    border-bottom: none;
+    
+}
+.funcionario ul li a {    
+    font-size: @tamanhoFontEsquerda;
+    color: #bdbdbd;
+    text-decoration: none;
+}
+.funcionario .foto-funcionario {
     width: 170px;
     height: 170px;
     -moz-border-radius: 50%;
