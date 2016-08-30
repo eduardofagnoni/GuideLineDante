@@ -42,7 +42,7 @@
 		</code>
 	</pre>
 
-
+	<!-- ********************************************************************* -->
 
 	<h1>Templates</h1>
 	<p>Abaixo o template padrão para o perfil de Alunos</p>
@@ -630,7 +630,6 @@
 	</pre>
 
 
-
 	<p>Abaixo o template padrão para o perfil de Funcionarios</p>
 
 <div class="geral geral-alunos">
@@ -921,10 +920,7 @@
 		</code>
 	</pre>
 
-
-
-
-
+	<!-- ********************************************************************* -->
 
 	<h1>Encapsulamento do conteúdo</h1>
 	<p>Estamos utilizando o Bootstrap como base para o sistema de grids. Para maiores informações sobre a aplicação das grids consulte a documentação do bootstrap disponível em: <a href="http://getbootstrap.com/">getbootstrap.com</a></p>
@@ -937,6 +933,7 @@
 		</code>
 	</pre>
 
+	<!-- ********************************************************************* -->
 
 	<h1>Titulos</h1>
 	<p class="textosGuide">Titulos &lt;h2&gt; ... &lt;/h2&gt; com os padrões de cores Laranja, Azul e Cinza.</p>
@@ -967,6 +964,7 @@
 		</code>
 	</pre>
 
+	<!-- ********************************************************************* -->
 
 	<h1>Texto do Corpo das páginas</h1>
 	<p class="textosGuide">Texto do corpo das páginas &lt;p&gt; ... &lt;/p&gt;, (lado direito das páginas). Todos os elementos do "corpo" das páginas estão vinculádos à classe "paginas" (class="paginas").</p>
@@ -983,6 +981,7 @@
 		</code>
 	</pre>
 
+	<!-- ********************************************************************* -->
 
 	<h1>Botões</h1>
 	<div class="paginas">
@@ -994,9 +993,8 @@
 		</p>
 		<p style="margin-bottom:10px;">
 			<button class="btnDante btnCinza">clique aqui<span><img src="images/ico_btn_cnz.gif" alt=""></span></button>	
-		</p>		
+		</p>				
 	</div>
-
 	<pre>
 		<code>
 &lt;div class="paginas"&gt;
@@ -1008,6 +1006,53 @@
 	</pre>
 
 
+	<div class="paginas">
+		<p style="margin-bottom:10px;">
+			<button class="btnDante btnLaranja">clique aqui<span><img src="images/ico_btn_lar2.gif" alt=""></span></button>
+		</p>
+		<p style="margin-bottom:10px;">
+			<button class="btnDante btnAzul">clique aqui<span><img src="images/ico_btn_azl2.gif" alt=""></span></button>	
+		</p>
+		<p style="margin-bottom:10px;">
+			<button class="btnDante btnCinza">clique aqui<span><img src="images/ico_btn_cnz2.gif" alt=""></span></button>	
+		</p>
+	</div>
+	<pre>
+		<code>
+&lt;div class="paginas"&gt;
+	&lt;button class="btnDante btnLaranja"&gt;clique aqui&lt;span&gt;&lt;img src="images/ico_btn_lar2.gif" alt=""&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;button class="btnDante btnAzul"&gt;clique aqui&lt;span&gt;&lt;img src="images/ico_btn_azl2.gif" alt=""&gt;&lt;/span&gt;&lt;/button&gt;
+	&lt;button class="btnDante btnCinza"&gt;clique aqui&lt;span&gt;&lt;img src="images/ico_btn_cnz2.gif" alt=""&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;	
+		</code>
+	</pre>
+
+	<!-- ********************************************************************* -->
+
+	<h1>Linhas e divisórias</h1>
+
+	<hr class="lin-laranja">
+	<pre>
+		<code>
+&lt;hr class="lin-laranja"&gt;	
+		</code>
+	</pre>
+
+	<hr class="lin-azul">
+	<pre>
+		<code>
+&lt;hr class="lin-azul"&gt;	
+		</code>
+	</pre>
+
+	<hr class="lin-cinza">
+	<pre>
+		<code>
+&lt;hr class="lin-cinza"&gt;	
+		</code>
+	</pre>
+
+	<!-- ********************************************************************* -->
 
 	<h1>Boxes de informações</h1>
 	<div class="paginas">
@@ -1079,8 +1124,6 @@
 	</pre>
 
 
-
-
 	<div class="paginas">
 		<div class="row">
 			<div class="col-xs-12 col-md-12">
@@ -1246,8 +1289,6 @@
 	</pre>
 
 
-
-
 	<div class="paginas">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
@@ -1435,9 +1476,6 @@
 &lt;/div&gt;
 		</code>
 	</pre>
-
-
-
 
 
 	<div class="paginas">
@@ -1469,7 +1507,6 @@
 	</pre>
 
 
-
 	<div class="paginas">
 		<div class="row box-modelo-3-azul">			
 			<div class="col-xs-12 col-sm-4">
@@ -1497,7 +1534,6 @@
 &lt;/div&gt;	
 		</code>
 	</pre>
-
 
 
 	<div class="paginas">
@@ -1528,13 +1564,7 @@
 		</code>
 	</pre>
 
-
-
-
 	
-
-
-
 	<div class="paginas">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
@@ -1691,6 +1721,57 @@
 		&lt;/div&gt;
 		&lt;div class="col-xs-12 col-sm-6"&gt;&lt;/div&gt;
 	&lt;/div&gt;
+&lt;/div&gt;
+		</code>
+	</pre>
+
+
+
+	<!-- ********************************************************************* -->
+
+	<h1>Lateral - Identificação Aluno</h1>
+	<div style="height:30px"></div>
+
+
+	<div class="row">
+		<div class="col-xs-12 col-md-4">
+			<div class="aluno">
+				<div class="foto-aluno">
+					<img src="images/foto_teste.jpg" alt="">
+				</div>
+				<p>Bem-vindo,</p>
+				<h2>Hildebrando Mattoso</h2>
+				<small><strong>Aluno</strong> &bull; Não é você? <a href="#">Clique aqui</a>.</small>
+
+				<ul>
+					<li><a href="#">Informações do aluno</a></li>
+					<li><a href="#">Alterar senha</a></li>
+					<li><a href="#">Notas parciais</a></li>
+					<li><a href="#">HighSchool</a></li>
+				</ul>
+
+			</div>
+		</div>
+	 	<div class="col-xs-12 col-md-8">
+	 	</div>
+	</div>
+	<pre>
+		<code>
+&lt;div class="aluno"&gt;
+	&lt;div class="foto-aluno"&gt;
+		&lt;img src="images/foto_teste.jpg" alt=""&gt;
+	&lt;/div&gt;
+	&lt;p&gt;Bem-vindo,&lt;/p&gt;
+	&lt;h2&gt;Hildebrando Mattoso&lt;/h2&gt;
+	&lt;small&gt;&lt;strong&gt;Aluno&lt;/strong&gt; &bull; Não é você? &lt;a href="#"&gt;Clique aqui&lt;/a&gt;.&lt;/small&gt;
+
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Informações do aluno&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Alterar senha&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Notas parciais&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;HighSchool&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
 &lt;/div&gt;
 		</code>
 	</pre>
