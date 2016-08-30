@@ -1,0 +1,673 @@
+/* ======================================================
+	Usar Ctrl+B para compilar o LESS
+   ====================================================*/
+@media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 769px) {}
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 1382px) {}
+
+/*-------------------------------------------------------
+    Cores
+  -----------------------------------------------------*/
+@cinzaTexto:#858585;
+@azul:#2d4490;
+@azul2:#1a2b70;
+@laranja:#e1a040;
+@laranja2:#d27c0f;
+@cinza:#59595b;
+@cinza2:#3c3c3d;
+@preto:#000000;
+@branco:#ffffff;
+@hoverMenuLaranja:#d27c0f;
+@hoverMenuLaranja2:#bf5c08;
+@hoverMenuAzul:#1a2b70;
+@hoverMenuAzul2:#0c0350;
+@hoverMenuCinza:#3c3c3d;
+@hoverMenuCinza2:#282829;
+
+@cinzaLinkFooter:#ababab;
+@cinzaLinkFooterHover:#333333;
+
+/*-------------------------------------------------------
+    Tamanho dos textos
+  -----------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
+.fonte{font-family: 'Open Sans', sans-serif; margin: 0; padding: 0; height: 100%; width: 100%; font-size:100%;}
+@tamanhoFontEsquerda:1.3em;
+@tamanhoFontDireita:1.0em;
+@tamanhoTituloH1:4.0em;
+@tamanhoTituloH2:1.8em;
+@tamanhoTituloH3:1.5em;
+@tamanhoTextoBotao:1.5em;
+
+/*-------------------------------------------------------
+    Fontes
+  -----------------------------------------------------*/
+.corAzul{color:@azul;}
+.corLaranja{color:@laranja;}
+.corCinza{color:@cinza;}
+
+/*-------------------------------------------------------
+    Geral
+  -----------------------------------------------------*/
+html,
+body {.fonte; background-color:#f6f6f6;}
+section {padding: 50px 30px 50px 30px; width: 990px; margin-left:auto; margin-right:auto; }
+pre {margin:0;margin-top:50px;margin-bottom:50px;padding:0px 30px 0px 30px;}
+code {padding: 50px 30px 30px 30px; background-color:#e0e0e0;margin:0;}
+
+
+/*-------------------------------------------------------
+    Textos
+  -----------------------------------------------------*/
+p.textosGuide {
+    color: @preto;
+    font-size: @tamanhoFontEsquerda;
+    .fonte;
+    margin-bottom: 20px;
+}  
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************
+**********************************************************************************
+*****                                                                        *****
+*****                                                                        *****
+*****                       P A D R Ã O   D A N T E                          *****
+*****                                                                        *****
+*****                                                                        *****
+**********************************************************************************
+*********************************************************************************/
+
+
+/*-------------------------------------------------------
+    Títulos
+  -----------------------------------------------------*/
+h1 {.fonte;font-size:@tamanhoTituloH1;color:@preto;font-weight:300;border-bottom:solid 1px #999;margin-bottom:20px;}  
+h2 {.fonte;font-size:@tamanhoTituloH2;font-weight:bold;}
+h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
+
+
+
+/*-------------------------------------------------------
+    Páginas corpo
+  -----------------------------------------------------*/
+.paginas {}
+.paginas p {
+    .fonte;
+    font-size:@tamanhoFontDireita;
+    color:@cinza;
+}
+
+/*-------------------------------------------------------
+    Botões
+  -----------------------------------------------------*/
+.paginas .btnDante {
+    padding: 0px 0px 0px 25px;
+    text-align: center;
+    border:none;
+    font-weight: 300px;
+}
+.paginas .btnDante span {
+    width: 59px;
+    height: 52px;
+    margin-left: 25px;
+}
+.paginas .btnLaranja {
+    background-color:@laranja;
+    color:@branco;
+    font-size:@tamanhoTextoBotao;    
+}
+.paginas .btnAzul {
+    background-color:@azul;
+    color:@branco;
+    font-size:@tamanhoTextoBotao;    
+}
+.paginas .btnCinza {
+    background-color:@cinza;
+    color:@branco;
+    font-size:@tamanhoTextoBotao;    
+}
+
+.paginas .btnTopo {}
+.paginas .btnVoltar {}
+
+
+/*-------------------------------------------------------
+    Boxes
+  -----------------------------------------------------*/
+.paginas .box-modelo-1 {
+    background-color: #fff;
+    margin-top: 30px;
+}
+.paginas .box-modelo-1 h3 {    
+    padding: 17px 23px 17px 23px;    
+    font-size:@tamanhoTituloH3;
+    font-weight: bold;
+}
+.paginas .box-modelo-1 img {
+    width: 100%
+}
+.paginas .box-modelo-1 p {
+    padding: 17px 23px 17px 23px;
+    margin: 0;
+    font-size:@tamanhoFontDireita;
+    color: #727272;
+    text-align: justify;
+}
+.paginas .box-laranja h3 {
+    border-bottom: solid 4px @laranja;
+    color: @laranja;
+}
+.paginas .box-azul h3 {
+    border-bottom: solid 4px @azul;
+    color: @azul;
+}
+.paginas .box-cinza h3 {
+    border-bottom: solid 4px @cinza;
+    color: @cinza;
+}
+
+
+/* ------------------------------------------------*/
+.paginas .box-modelo-2 {}
+.paginas .box-modelo-2 div.box-horizontal {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.paginas .box-modelo-2 div.box-horizontal .img-box img {
+    width: 100%;
+    float: left;
+    background-color: @branco;
+}
+.paginas .box-modelo-2 div.box-horizontal .desc {
+    float: left;
+    margin-left: 20px;
+}
+.paginas .box-modelo-2 ul {
+    text-align: right;
+}
+.paginas .box-modelo-2 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.paginas .box-modelo-4 {}
+.paginas .box-modelo-4 div.box-horizontal {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.paginas .box-modelo-4 div.box-horizontal .img-box img {
+    width: 100%;
+    float: left;
+    background-color: @branco;
+}
+.paginas .box-modelo-4 div.box-horizontal .desc {
+    float: left;
+    margin-left: 20px;
+}
+.paginas .box-modelo-4 ul {
+    text-align: right;
+}
+.paginas .box-modelo-4 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.paginas .bxMod2Laranja hr {
+    height: 1px;
+    /*background-color: transparent;*/
+    border-bottom: solid 1px @laranja;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.paginas .bxMod2Azul hr {
+    height: 1px;
+    /*background-color: transparent;*/
+    border-bottom: solid 1px @azul;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.paginas .bxMod2Cinza hr {
+    height: 1px;
+    /*background-color: transparent;*/
+    border-bottom: solid 1px @cinza;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paginas .bxMod2Laranja h3 {
+    .fonte;
+    font-size: @tamanhoTituloH3;
+    color: @laranja
+}
+.paginas .bxMod2Azul h3 {
+    .fonte;
+    font-size: @tamanhoTituloH3;
+    color: @azul
+}
+.paginas .bxMod2Cinza h3 {
+    .fonte;
+    font-size: @tamanhoTituloH3;
+    color: @cinza
+}
+
+.paginas .bxMod2Laranja p.txt {
+    font-weight: bold;
+    color: @laranja;
+}
+.paginas .bxMod2Azul p.txt {
+    font-weight: bold;
+    color: @azul;
+}
+.paginas .bxMod2Cinza p.txt {
+    font-weight: bold;
+    color: @cinza;
+}
+/* ------------------------------------------------*/
+
+.paginas .box-modelo-3-laranja {}
+.paginas .box-modelo-3-laranja .bx-img {border-bottom:solid 5px @laranja; margin-bottom:10px;}
+.paginas .box-modelo-3-laranja .bx-img img {width:100%}
+.paginas .box-modelo-3-laranja p {.fonte; font-weight:bold; color: @laranja;}
+.paginas .box-modelo-3-laranja p+p {font-weight:normal; color: @cinzaTexto;}
+.paginas .box-modelo-3-laranja p+p+p {font-size:@tamanhoFontEsquerda;}
+
+.paginas .box-modelo-3-azul {}
+.paginas .box-modelo-3-azul .bx-img {border-bottom:solid 5px @azul; margin-bottom:10px;}
+.paginas .box-modelo-3-azul .bx-img img {width:100%}
+.paginas .box-modelo-3-azul p {.fonte; font-weight:bold; color: @azul;}
+.paginas .box-modelo-3-azul p+p {font-weight:normal; color: @cinzaTexto;}
+.paginas .box-modelo-3-azul p+p+p {font-size:@tamanhoFontEsquerda;}
+
+.paginas .box-modelo-3-cinza {}
+.paginas .box-modelo-3-cinza .bx-img {border-bottom:solid 5px @cinza; margin-bottom:10px;}
+.paginas .box-modelo-3-cinza .bx-img img {width:100%}
+.paginas .box-modelo-3-cinza p {.fonte; font-weight:bold; color: @cinza;}
+.paginas .box-modelo-3-cinza p+p {font-weight:normal; color: @cinzaTexto;}
+.paginas .box-modelo-3-cinza p+p+p {font-size:@tamanhoFontEsquerda;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************
+**************************************************************
+*****                                                    *****
+*****                                                    *****
+*****                   a l u n o s                      *****
+*****                                                    *****
+*****                                                    *****
+**************************************************************
+*************************************************************/
+.geral-alunos header {
+    background-color: #ffffff;
+    width: 100%;    
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin:0;
+    padding:0;
+
+}
+.geral-alunos header h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border:none;
+}
+.geral-alunos header ul.links-contatos {
+    text-align: right;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+.geral-alunos header ul.links-contatos li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+
+/*************************************************************
+**************************************************************
+*****                                                    *****
+*****                                                    *****
+*****     m e n u   p r i n c i p a l   a l u n o s      *****
+*****     modificação do menu para abrir com over        *****
+*****     e não com clique                               *****
+*****                                                    *****
+**************************************************************
+*************************************************************/
+
+/*-------------------------------------------------------
+    Dropdown menu
+  -----------------------------------------------------*/ 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    width: 704px;
+    right: -295px!important;
+    /*min-width: 160px;*/
+    padding:0;
+    margin:0;
+    list-style: none;
+    font-size: 14px;
+    text-align:center; /*left;*/
+    /*background-color:@laranja2;*/
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*background-color: red;*/
+}           
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    text-decoration: none;
+    /*color:#ffffff; 
+    background-color:@hoverMenuLaranja2; */
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    /*color: #ffffff;*/
+    text-decoration: none;
+    outline: 0;
+    /*background-color:@hoverMenuLaranja2; */
+}
+
+.dropdown-menu li.secretaria {
+    display: inline-block;
+    /*width: 100%;*/
+    margin: 0;
+    padding:0;
+}
+.dropdown-menu li.secretaria a {
+    display: inline-block;
+    /*width: 100%;*/
+    /*color: #ffffff;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/*-------------------------------------------------------
+    Laranja
+  -----------------------------------------------------*/                      
+.navbar-laranja {
+    background-color:@laranja;
+}
+.navbar-laranja .navbar-nav > li > a:hover,
+.navbar-laranja .navbar-nav > li > a:focus {
+  color: @branco;
+  background-color:@hoverMenuLaranja; /*transparent;*/
+}
+.navbar-laranja .navbar-nav > .active > a,
+.navbar-laranja .navbar-nav > .active > a:hover,
+.navbar-laranja .navbar-nav > .active > a:focus {
+  color: @branco;
+  background-color:@hoverMenuLaranja; /*#e7e7e7;*/
+}
+.navbar-laranja .navbar-nav > .open > a,
+.navbar-laranja .navbar-nav > .open > a:hover,
+.navbar-laranja .navbar-nav > .open > a:focus {
+  background-color:@hoverMenuLaranja;
+  color: @branco;
+}     
+
+
+/*-------------------------------------------------------
+    Azul
+  -----------------------------------------------------*/                      
+.navbar-azul {
+    background-color:@azul;
+}
+.navbar-azul .navbar-nav > li > a:hover,
+.navbar-azul .navbar-nav > li > a:focus {
+  color: @branco;
+  background-color:@hoverMenuAzul; /*transparent;*/
+}
+.navbar-azul .navbar-nav > .active > a,
+.navbar-azul .navbar-nav > .active > a:hover,
+.navbar-azul .navbar-nav > .active > a:focus {
+  color: @branco;
+  background-color:@hoverMenuAzul; /*#e7e7e7;*/
+}
+.navbar-azul .navbar-nav > .open > a,
+.navbar-azul .navbar-nav > .open > a:hover,
+.navbar-azul .navbar-nav > .open > a:focus {
+  background-color:@hoverMenuAzul;
+  color: @branco;
+} 
+
+/*-------------------------------------------------------
+    Cinza
+  -----------------------------------------------------*/                      
+.navbar-cinza {
+    background-color:@cinza;
+}
+.navbar-cinza .navbar-nav > li > a:hover,
+.navbar-cinza .navbar-nav > li > a:focus {
+  color: @branco;
+  background-color:@hoverMenuCinza; /*transparent;*/
+}
+.navbar-cinza .navbar-nav > .active > a,
+.navbar-cinza .navbar-nav > .active > a:hover,
+.navbar-cinza .navbar-nav > .active > a:focus {
+  color: @branco;
+  background-color:@hoverMenuCinza; /*#e7e7e7;*/
+}
+.navbar-cinza .navbar-nav > .open > a,
+.navbar-cinza .navbar-nav > .open > a:hover,
+.navbar-cinza .navbar-nav > .open > a:focus {
+  background-color:@hoverMenuCinza;
+  color: @branco;
+} 
+
+/*-------------------------------------------------------
+    Dropdown menu laranja
+  -----------------------------------------------------*/
+.ddMenu-laranja {background-color:@laranja2;}
+.ddMenu-laranja > li > a:hover,
+.ddMenu-laranja > li > a:focus {
+    color:@branco; 
+    background-color:@hoverMenuLaranja2; 
+}
+.ddMenu-laranja > .active > a,
+.ddMenu-laranja > .active > a:hover,
+.ddMenu-laranja > .active > a:focus {
+    color:@branco;
+    background-color:@hoverMenuLaranja2; 
+}
+.ddMenu-laranja li.secretaria a {    
+    color:@branco;    
+}
+
+/*-------------------------------------------------------
+    Dropdown menu azul
+  -----------------------------------------------------*/    
+.ddMenu-azul {background-color:@azul2;}
+.ddMenu-azul > li > a:hover,
+.ddMenu-azul > li > a:focus {
+    color:@branco; 
+    background-color:@hoverMenuAzul2; 
+}
+.ddMenu-azul > .active > a,
+.ddMenu-azul > .active > a:hover,
+.ddMenu-azul > .active > a:focus {
+    color:@branco;
+    background-color:@hoverMenuAzul2; 
+}
+.ddMenu-azul li.secretaria a {    
+    color:@branco;    
+}
+
+/*-------------------------------------------------------
+    Dropdown menu cinza
+  -----------------------------------------------------*/  
+.ddMenu-cinza {background-color:@cinza2;}
+.ddMenu-cinza > li > a:hover,
+.ddMenu-cinza > li > a:focus {
+    color:@branco; 
+    background-color:@hoverMenuCinza2; 
+}
+.ddMenu-cinza > .active > a,
+.ddMenu-cinza > .active > a:hover,
+.ddMenu-cinza > .active > a:focus {
+    color:@branco;
+    background-color:@hoverMenuCinza2; 
+}
+.ddMenu-cinza li.secretaria a {    
+    color:@branco;    
+}
+
+
+
+
+
+/*************************************************************
+**************************************************************
+*****                                                    *****
+*****                                                    *****
+*****                   f o o t e r                      *****
+*****                                                    *****
+*****                                                    *****
+**************************************************************
+*************************************************************/
+footer {
+    background-color: #737373;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    /*border-bottom: solid 5px @laranja;*/
+}
+footer img {
+    margin-bottom: 25px;
+}
+footer p {
+    margin:0;
+    /*color: @laranja;*/
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer ul {
+    margin:0;
+    padding:0;
+    margin-bottom: 15px;
+}
+footer ul li {
+    margin:0;
+    padding:0;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+footer ul li a {
+    /*color:@cinzaLinkFooter;*/
+    text-decoration: none;
+    font-size: 1em;
+}
+footer ul li a:hover {
+    /*color:@cinzaLinkFooterHover;*/
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------
+    Footer Laranja
+  -----------------------------------------------------*/  
+.footer-laranja {border-bottom: solid 5px @laranja;}
+.footer-laranja p {color:@laranja;}
+footer ul li a {
+    color:@cinzaLinkFooter;
+}
+footer ul li a:hover {
+    color:@cinzaLinkFooterHover;
+}
+
+/*-------------------------------------------------------
+    Footer Azul
+  -----------------------------------------------------*/
+.footer-azul {border-bottom: solid 5px @azul;}
+.footer-azul p {color:@azul;}
+footer ul li a {
+    color:@cinzaLinkFooter;
+}
+footer ul li a:hover {
+    color:@cinzaLinkFooterHover;
+}
+
+/*-------------------------------------------------------
+    Footer Cinza
+  -----------------------------------------------------*/
+.footer-cinza {border-bottom: solid 5px @cinza;}
+.footer-cinza p {color:@branco;}
+footer ul li a {
+    color:@cinzaLinkFooter;
+}
+footer ul li a:hover {
+    color:@cinzaLinkFooterHover;
+}
