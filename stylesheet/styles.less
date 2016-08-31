@@ -223,6 +223,83 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 }
 
 
+
+
+
+/*-------------------------------------------------------
+    Responsaveis
+  -----------------------------------------------------*/
+.responsavel {
+    background-color: #ffffff;
+    border-bottom: solid 7px @azul;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+
+}
+.responsavel p {
+    margin:0;
+    padding:0;
+    font-size: 1.5em;
+    color: @cinza;
+}
+.responsavel small {
+    font-size: 0.9em;
+    color: @cinza;
+}
+.responsavel small a {
+    text-decoration: underline;
+    color: inherit;
+}
+.responsavel h2 {
+    margin:0;
+    padding:0;
+    color:@azul;
+    font-size:@tamanhoTituloH2;
+    position: relative;
+}
+.responsavel ul {
+    margin:0;
+    padding:0;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+.responsavel ul li {
+    display: block;
+    list-style-type: none;
+    border-bottom: solid 1px @cinzaTexto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.responsavel ul li:last-child {
+    border-bottom: none;
+
+}
+.responsavel ul li a {    
+    font-size: @tamanhoFontEsquerda;
+    color: #bdbdbd;
+    text-decoration: none;
+}
+.responsavel .tb-aluno .foto-aluno {
+    width: 79px;
+    height: 79px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.responsavel .tb-aluno {margin-top: 30px;}
+.responsavel .tb-aluno .foto-aluno img {max-width: 79px;}
+.responsavel .tb-aluno p {.fonte; font-size: tamanhoFontDireita; color: @cinzaTexto;}
+.responsavel .tb-aluno p span {.fonte; font-size: tamanhoFontEsquerda; color: @azul; font-weight: bold;}
+
+
+
+
+
 /*-------------------------------------------------------
     Funcionario
   -----------------------------------------------------*/
@@ -448,6 +525,71 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 .paginas .box-modelo-3-cinza p {.fonte; font-weight:bold; color: @cinza;}
 .paginas .box-modelo-3-cinza p+p {font-weight:normal; color: @cinzaTexto;}
 .paginas .box-modelo-3-cinza p+p+p {font-size:@tamanhoFontEsquerda;}
+
+
+
+
+
+
+/*-------------------------------------------------------
+    Tabelas
+  -----------------------------------------------------*/
+.paginas .tabela-1 {
+    background-color: @branco;                                  
+}
+.paginas .tabela-1 tr th {
+    /*border-bottom: solid 4px @laranja;*/
+    padding: 17px 23px 17px 23px;
+    /*color: @laranja;*/
+    font-size: @tamanhoTituloH2;
+    font-weight: normal;
+}
+.paginas .tabela-1 tr th + th {
+    font-weight: 300;
+}
+.paginas .tabela-1 tr td {
+    padding: 17px 23px 17px 23px;
+    font-size: @tamanhoFontDireita;
+    color: @cinza;
+}
+.paginas .tabela-1 ul {
+    text-align: center;
+}
+.paginas .tabela-1 ul li {
+    list-style: none;
+    padding: 8px 0 8px 0;
+    border-bottom: solid 1px @cinza;
+    text-align: center;
+}
+.paginas .tabela-1 ul li:last-child {
+    border-bottom: none;
+}
+.paginas .tabela-1 ul li a {
+    color: @cinza;
+    text-decoration: none;
+    font-size: @tamanhoFontDireita;
+    text-align: center;
+}
+.paginas .tabela-1 ul li a:hover {
+    color: @cinza2;
+}
+
+.paginas .tabela-1-laranja tr th {
+    border-bottom: solid 4px @laranja;
+    color: @laranja;
+}
+.paginas .tabela-1-azul tr th {
+    border-bottom: solid 4px @azul;
+    color: @azul;
+}
+.paginas .tabela-1-cinza tr th {
+    border-bottom: solid 4px @cinza;
+    color: @cinza;
+}
+
+
+
+
 
 
 
