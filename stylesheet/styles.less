@@ -109,6 +109,13 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
     font-size:@tamanhoFontDireita;
     color:@cinza;
 }
+.paginas span.invert {
+    padding: 4px 15px 4px 15px;
+    background-color: #980000;
+    color: @branco;
+    text-transform: uppercase;
+    font-size:0.78em;
+}
 
 /*-------------------------------------------------------
     Botões
@@ -143,8 +150,27 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 }
 .paginas .btnCinza:hover {background-color:@hoverMenuCinza;}
 
-.paginas .btnTopo {}
-.paginas .btnVoltar {}
+.paginas .btnDanteTopo,
+.paginas .btnDanteVoltar {
+    .fonte;
+    font-weight: 300;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    width: 120px;
+}
+.paginas .btnTopo-laranja {color: @laranja;}
+.paginas .btnTopo-azul {color: @azul;}
+.paginas .btnTopo-cinza {color: @cinza;}
+.paginas .btnVoltar-laranja {color: @laranja;}
+.paginas .btnVoltar-azul {color: @azul;}
+.paginas .btnVoltar-cinza {color: @cinza;}
+
+
+
+
+
+
 
 
 /*-------------------------------------------------------
@@ -584,6 +610,57 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 }
 .paginas .tabela-1-cinza tr th {
     border-bottom: solid 4px @cinza;
+    color: @cinza;
+}
+
+/* -------------------------------------------------------- */
+
+.paginas .tabela-2 {
+    background-color: @branco;
+    width: 100%;    
+}
+.paginas .tabela-2 div {
+    padding:15px 0 15px 0;
+}
+.paginas .tabela-2 div a {
+    color: @cinzaTexto;
+}
+.paginas .tabela-2 div a:hover {
+    text-decoration: none;
+}
+.paginas .tabela-2 div h2 {
+    font-size: @tamanhoTituloH2;
+    padding: 0 30px 0 30px;
+}
+.paginas .tabela-2 div + div {
+    border-bottom: none;
+}
+.paginas .tabela-2 div ul {
+    padding: 10px 30px 10px 30px;
+    margin: 0;
+}
+.paginas .tabela-2 div ul li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: block;
+}
+.paginas .tabela-2-laranja div {
+    border-bottom:solid 4px @laranja; 
+}
+.paginas .tabela-2-laranja div h2 {
+    color: @laranja;
+}
+.paginas .tabela-2-azul div {
+    border-bottom:solid 4px @azul; 
+}
+.paginas .tabela-2-azul div h2 {
+    color: @azul;
+}
+.paginas .tabela-2-cinza div {
+    border-bottom:solid 4px @cinza; 
+}
+.paginas .tabela-2-cinza div h2 {
     color: @cinza;
 }
 
