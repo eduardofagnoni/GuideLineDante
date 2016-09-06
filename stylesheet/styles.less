@@ -797,23 +797,174 @@ h3 {.fonte;font-size:@tamanhoTituloH3;font-weight:bold;}
 .bloco-mail-cinza {border-bottom: solid 5px @cinza;}
 
 
+/* ******************************************** */
+
+
+@media only screen and (min-width: 320px) {
+    /* calcula primeira linha com tres colunas */
+    @tamanhoTotal:1140;
+    @tamanhoItem: @tamanhoTotal/1 - 6;
+    @transformaEmPorcentagem: @tamanhoItem/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul li {
+        width:~"@{transformaEmPorcentagem}%";
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        display: block;
+        color: @cinzaTexto;
+    }
+    /* calcula primeira linha com cinco colunas */
+    @tamanhoItem2: @tamanhoTotal/1 - 6;
+    @transformaEmPorcentagem2: @tamanhoItem2/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul + ul li {
+        width:~"@{transformaEmPorcentagem2}%";
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        display: block;
+        color: @cinzaTexto;
+    }
+}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 600px) {
+    /* calcula primeira linha com tres colunas */
+    @tamanhoTotal:1140;
+    @tamanhoItem: @tamanhoTotal/3 - 6;
+    @transformaEmPorcentagem: @tamanhoItem/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul li {
+        width:~"@{transformaEmPorcentagem}%";
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+    /* calcula primeira linha com cinco colunas */
+    @tamanhoItem2: @tamanhoTotal/5 - 6;
+    @transformaEmPorcentagem2: @tamanhoItem2/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul + ul li {
+        width:~"@{transformaEmPorcentagem2}%";
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+}
+@media only screen and (min-width: 762px) {
+    /* calcula primeira linha com tres colunas */
+    @tamanhoTotal:1140;
+    @tamanhoItem: @tamanhoTotal/3 - 6;
+    @transformaEmPorcentagem: @tamanhoItem/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul li {
+        width:~"@{transformaEmPorcentagem}%";
+        list-style: none;
+        padding: 20px 40px 20px 40px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+    /* calcula primeira linha com cinco colunas */
+    @tamanhoItem2: @tamanhoTotal/5 - 6;
+    @transformaEmPorcentagem2: @tamanhoItem2/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul + ul li {
+        width:~"@{transformaEmPorcentagem2}%";
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+}
+@media only screen and (min-width: 830px) {}
+@media only screen and (min-width: 992px) {
+    /* calcula primeira linha com tres colunas */
+    @tamanhoTotal:1140;
+    @tamanhoItem: @tamanhoTotal/3 - 6;
+    @transformaEmPorcentagem: @tamanhoItem/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul li {
+        width:~"@{transformaEmPorcentagem}%";
+        list-style: none;
+        padding: 20px 40px 20px 40px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+    /* calcula primeira linha com cinco colunas */
+    @tamanhoItem2: @tamanhoTotal/5 - 6;
+    @transformaEmPorcentagem2: @tamanhoItem2/@tamanhoTotal * 100;
+    .paginas .formas-de-pgto ul + ul li {
+        width:~"@{transformaEmPorcentagem2}%";
+        list-style: none;
+        padding: 20px 40px 20px 40px;
+        margin: 0;
+        display: inline-block;
+        color: @cinzaTexto;
+    }
+}
+@media only screen and (min-width: 1382px) {}
+.paginas .formas-de-pgto {
+    background-color: @branco;
+}
+.paginas .formas-de-pgto div {
+    padding:15px 0 15px 0;    
+}
+.paginas .formas-de-pgto div h2 {    
+    font-size: @tamanhoTituloH2;
+    padding: 0 30px 0 30px;
+}
+.paginas .formas-de-pgto div + div {
+    border:none;
+}
+.paginas .formas-de-pgto ul {
+    border-bottom: solid 1px @cinza3;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.paginas .formas-de-pgto input {
+    padding: 0;
+    margin: 0;
+}
+.paginas .formas-de-pgto .input-group {
+    border:none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.paginas .frm-pgto-laranja div {border-bottom: solid 5px @laranja;}
+.paginas .frm-pgto-laranja div h2 {color: @laranja;}
+
+.paginas .frm-pgto-azul div {border-bottom: solid 5px @azul;}
+.paginas .frm-pgto-azul div h2 {color: @azul;}
+
+.paginas .frm-pgto-cinza div {border-bottom: solid 5px @cinza;}
+.paginas .frm-pgto-cinza div h2 {color: @cinza;}
 
 
 
 
+/* ******************************************** */
 
 
 
 
+ul.pag-laranja li a {color: @laranja;}
+ul.pag-azul li a {color: @azul;}
+ul.pag-cinza li a {color: @cinza;}
 
 
 
+/* ******************************************** */
 
-
-
-
-
-
+.thumbnails {margin-top: 10px; text-align: center;}
+.thumbnails img {
+    width: 109px;
+    margin-bottom: 10px;
+}
 
 
 
